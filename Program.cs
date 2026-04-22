@@ -19,7 +19,7 @@ class Program
         // Get version numbers to compare
         var (ver1, ver2) = inputHandler.GetVersionNumber();
         // Create output file
-        fileHandler.CreateOutputFile(@$".\Out\1_0_{ver1}_to_1_0_{ver2}.txt");
+        fileHandler.CreateOutputFile("Out", $"1_0_{ver1}_to_1_0_{ver2}.txt");
         // Initialize string to write output to - we don't want to constantly write to the file
         string shit2output = "";
 

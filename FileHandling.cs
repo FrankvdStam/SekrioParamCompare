@@ -38,9 +38,9 @@ class FileHandler
         return output;
     }
 
-    public void CreateOutputFile(string path)
+    public void CreateOutputFile(string outdir, string file)
     {
-        if (!File.Exists(path))
-            File.Create(path).Close();
+        Directory.CreateDirectory(@$".\{outdir}");
+        File.WriteAllText(@$".\{outdir}\{file}", "");
     }
 }
